@@ -135,10 +135,11 @@
       border-radius: 6px;
       padding: 5px 10px;
       font-size: 0.8rem;
-    }
-    .button {
-        padding: 10px;
-        
+      
+    .pagination {
+        display: flex;
+        justify-content; center;
+        text-align: center;
     }
   </style>
 
@@ -148,7 +149,9 @@
 
     <h1>OCTOBER 2025 <i class="fa-solid fa-calendar"></i> </h1>
     
-    <h6 style="text-align: left;">VALENCIA XI-1 | 29 </h6>
+    <div class="calendar-wrapper" style="max-width: 900px; margin: 0 auto;">
+    <h6 style="text-align: left; margin-bottom: 10px;">VALENCIA XI-1 | 29 </h6>
+
     
 
   <div class="calendar">
@@ -174,7 +177,7 @@
     
 <div class="day"> <div class="day-number">5</div>
       <div class="dot"></div>
-      vacation✈️🗺️
+      vacation<i></i>✈️🗺️
       <div class="dot-content p-2">
         <div id="carousel15" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-inner">
@@ -292,18 +295,25 @@
     <div class="day"><div class="day-number">31</div></div>
   </div>
   
-  
-  <div class="button">
-           <table>
-               <tr>
-                    <td style="text-align: left;"> <i class="fa-solid fa-hand-point-left"></i> </td>
-                    
-                    <td style="text-align: right;"> <i class="fa-solid fa-hand-point-right"></i> </td>
-               </tr>
-           </table>
-       </div>
-     
-        
+ 
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center my-4">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
         
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
