@@ -28,7 +28,7 @@ body {
           color: #D0B8A8;
     }
    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
+      0%, 100% { transform: translateY(0); } 
       50% { transform: translateY(-15px); }
     }
      .progress {
@@ -38,12 +38,12 @@ body {
     }
 
 
- </style>
+ </style> 
 
 </head>
 <body>
   <div class="loader">
-    <div class="emoji">‧₊˚♪ 𝄞₊˚⊹⋆</div>
+    <div class="emoji">🕛</div> 
     <div class="loading-text">VALENCIA DRIENDA WIJAYA</div>
     <div class="progress w-75 mx-auto">
       <div id="progressBar" 
@@ -57,6 +57,14 @@ body {
     const duration = 7500; 
     const interval = 150;   
     const step = 100 / (duration / interval);
+     const emojiList = ['🕛', '🕐', '🕑', '🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙', '🕚'];
+       const emojiElement = document.querySelector(".emoji");
+  let emojiIndex = 0;
+  
+    const emojiTimer = setInterval(() => {
+    emojiIndex = (emojiIndex + 1) % emojiList.length;
+    emojiElement.textContent = emojiList[emojiIndex];
+  }, 1000); 
 
 const timer = setInterval(() => {
       progress += step;
@@ -70,4 +78,3 @@ const timer = setInterval(() => {
 </Script>
 </body>
 </html>
-
