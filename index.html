@@ -72,7 +72,7 @@ const timer = setInterval(() => {
         progress = 100;
         clearInterval(timer);
         // setelah selesai, redirect ke home.html
-        window.location.href = "Home.html"; }
+        window.location.href = "Home.html", "_blank"; }
       progressBar.style.width = progress + "%";
       progressBar.innerText = Math.floor(progress) + "%";  }, interval);
 </Script>
